@@ -80,7 +80,10 @@ sed -n 1p nodes_male.csv/part-00000 >> nodeHeaderGender.txt
 ```
 This produces a new file containing the header line from 
 
-```nodes_male.csv/part-00000```
+
+```
+nodes_male.csv/part-00000
+```
 
 Minor modification will need to be done to the file in order to correctly index it during the *Neo4J* importation process. This involves adding the *:ID* flag to the index (or ID) column.
 
