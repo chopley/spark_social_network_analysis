@@ -2,9 +2,12 @@
 Example of spark social network analysis using Spark
 
 ##Install Neo4J 
-See https://neo4j.com/
+https://neo4j.com/download/community-edition/
+neo4j-community-3.0.4
 
-##Install Zeppelin 0.5.6 
+##Install Apache Zeppelin 0.5.6 
+The example in this repo were tested using Apache Zeppelin 0.5.6 
+
 https://zeppelin.apache.org/download.html Use file zeppelin-0.5.6-incubating-bin-all.tgz
 You will need to modify the following in the Zeppelin interpreter
 
@@ -12,6 +15,8 @@ You will need to modify the following in the Zeppelin interpreter
 - spark.executor.memory	10g
 - spark.serializer	org.apache.spark.serializer.KryoSerializer
 - zeppelin.driver.memory	8g
+
+The *spark_zeppelin_social_network_analysis.json* file contains the Apache Zeppelin notebook appropriate for this example.
 
 ##Data description
 The data are an anonymised data set from the Statnet package. This is based on the *National Longitudinal Study of Adolescent Health  (Harris, Florey,
@@ -27,6 +32,11 @@ The data were extracted using the R script *network_data_simulation.R* producing
 3. sexNodes.csv
 4. gradeNodes.csv
 
+### Spark Social Network Preparation
+
+
+
+### Neo4J data importation
 ```
 rm -rf graph.db
 ../neo4j-community-3.0.4/bin/neo4j-import  --into  ./graph --nodes:men "nodeHeaderGender.txt,nodes_male.csv/part-00000" --nodes:women "nodeHeaderGender.txt,nodes_female.csv/part-00000" --relationships:knows "edgeHeader.txt,edges.csv/part-00000"
