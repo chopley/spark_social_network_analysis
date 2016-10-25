@@ -14,9 +14,13 @@ You will need to modify the following in the Zeppelin interpreter
 - zeppelin.driver.memory	8g
 
 ##Data description
-The data are an anonymised data set from the Statnet package. This is based on the National Longitudinal Study of Adolescent Health  (Harris, Florey,
-Tabor, Bearman, Jones, and Udry 2003). The anonymisation is described in A statnet Tutorial (Goodreau, Handcock, Hunter, Butts and Morris ),Journal of Statistical Software,February 2008, Volume 24 
-https://www.jstatsoft.org/article/view/v024i09. The data were extracted using the R script network_data_simulation.R producing the following output files
+The data are an anonymised data set from the Statnet package. This is based on the *National Longitudinal Study of Adolescent Health  (Harris, Florey,
+Tabor, Bearman, Jones, and Udry 2003)*. 
+
+The anonymisation is described in A statnet Tutorial (Goodreau, Handcock, Hunter, Butts and Morris ),Journal of Statistical Software,February 2008, Volume 24 
+https://www.jstatsoft.org/article/view/v024i09. 
+
+The data were extracted using the R script *network_data_simulation.R* producing the following output files
 1. networkEdges.csv
 2. raceNodes.csv
 3. sexNodes.csv
