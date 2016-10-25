@@ -99,9 +99,7 @@ to
 UserId:ID,Gender,Grade,Race,Gender_homophilly,Grade_homophilly,Race_homophilly,Label,Pagerank
 ```
 
-We also need to remove the header files from the individual data files themselves. In this *Github* example there is only a single file in each csv folder (owing to the coalesce(1) command in Spark) , however in real data analysis this might produce a *VERY* large file. 
-
-Typically the csv files in the folder will record the data from each Spark partition ---typically thousands of files--- making removal of the header files very tedious. 
+We also need to remove the header files from the individual data files themselves. In real data analysis, the csv files in the folder will record the data from each Spark partition ---typically thousands of files--- making removal of the header files very tedious. 
 
 A useful command to deal with this is to change into the respective csv folders and use *sed* to remove the first line from each file in the folder as follows
 
