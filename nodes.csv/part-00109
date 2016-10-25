@@ -1,0 +1,8 @@
+UserId,Gender,Grade,Race,Gender_homophilly,Grade_homophilly,Race_homophilly,Label,Pagerank
+140,M,9,White,1.0,1.0,null,140,0.15
+340,M,10,Black,null,null,null,340,0.15
+540,M,8,White,null,null,null,540,0.15
+740,F,7,White,null,null,null,740,0.15
+940,F,10,White,1.0,1.0,1.0,14,0.15
+1140,M,8,White,null,null,null,1140,0.15
+1340,M,10,White,1.0,1.0,1.0,1340,0.27749999999999997
