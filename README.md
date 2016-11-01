@@ -28,6 +28,14 @@ cd ~/Documents/zeppelin-0.5.6-incubating-bin-all/
 ```
 The Zeppelin notebook can be found here:
 
+*http://localhost:8080/#/*
+
+The interpreter can be found here:
+
+*http://localhost:8080/#/interpreter*
+
+And a status page can be found here
+
 *http://localhost:4040/jobs/*
 
 
@@ -38,7 +46,7 @@ You will need to modify the following in the Zeppelin interpreter
 - spark.serializer	org.apache.spark.serializer.KryoSerializer
 - zeppelin.driver.memory	8g
 
-The *spark\_zeppelin\_social\_network\_analysis.json* file contains the Apache Zeppelin notebook appropriate for this example.
+The *spark\_zeppelin\_social\_network\_analysis.json* file contains the Apache Zeppelin notebook appropriate for this example. This can be imported through the front page of the Zeppelin Browser and then loaded.
 
 ##Data description
 The data are an anonymised data set from the *Statnet* *R* package. The data are a simulation based on the *National Longitudinal Study of Adolescent Health  (Harris, Florey,
@@ -176,3 +184,5 @@ And finally restart the Neo4J server
 The Neo4J server can be access at
 
 *http://localhost:7474/browser/*
+
+
