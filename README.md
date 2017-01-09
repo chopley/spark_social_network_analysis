@@ -107,6 +107,12 @@ to
 UserId:ID,Gender,Grade,Race,Gender_homophilly,Grade_homophilly,Race_homophilly,Label,Pagerank
 ```
 
+the edge header file needs to be of the following form
+```
+:START_ID,:END_ID,count
+
+```
+
 We also need to remove the header files from the individual data files themselves. In real data analysis, the csv files in the folder will record the data from each Spark partition ---typically thousands of files--- making removal of the header files very tedious. 
 
 A useful command to deal with this is to change into the respective csv folders and use *sed* to remove the first line from each file in the folder as follows
