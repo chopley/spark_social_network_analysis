@@ -50,7 +50,7 @@ The *spark\_zeppelin\_social\_network\_analysis.json* file contains the Apache Z
 
 ##Data description
 The data are an anonymised data set from the *Statnet* *R* package. The data are a simulation based on the *National Longitudinal Study of Adolescent Health  (Harris, Florey,
-Tabor, Bearman, Jones, and Udry 2003)*. 
+Tabor, Bearman, Jones, and Udry 2003)*.  See description of data here https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2443947/
 
 The anonymisation is described in *A Statnet Tutorial (Goodreau, Handcock, Hunter, Butts and Morris ), Journal of Statistical Software, February 2008, Volume 24* 
 https://www.jstatsoft.org/article/view/v024i09. 
